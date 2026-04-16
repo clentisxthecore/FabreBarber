@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabre Barbearia | Autoridade em Imagem Masculina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --petroleum: #0F1718;
+            --graphite: #1D2425;
+            --ice: #F8F8F6;
+            --silver: #C7C7C7;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: var(--petroleum); color: var(--ice); scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Bebas Neue', cursive; letter-spacing: 2px; }
+        
+        .glass { background: rgba(15, 23, 24, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        
+        .btn-premium {
+            background-color: var(--ice);
+            color: var(--petroleum);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-premium:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); filter: brightness(0.9); }
+        
+        .service-card {
+            background: var(--graphite);
+            border: 1px solid rgba(110, 116, 117, 0.2);
+            transition: all 0.5s ease;
+        }
+        .service-card:hover { border-color: var(--ice); transform: translateY(-5px); }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 24, 0.6), rgba(15, 23, 24, 1)), 
+                        url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- LINK UNIFICADO WHATSAPP COM MENSAGEM -->
+    <!-- URL: https://wa.me/5532991118053?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20na%20Fabre%20Barbearia. -->
+
+    <!-- HEADER -->
+    <header class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-[0.2em]">FABRE</div>
+        <nav class="hidden md:flex gap-8 text-xs font-light uppercase tracking-widest text-silver">
+            <a href="#" class="hover:text-white transition">Início</a>
+            <a href="#servicos" class="hover:text-white transition">Serviços</a>
+            <a href="#sobre" class="hover:text-white transition">O Espaço</a>
+        </nav>
+        <!-- BOTÃO AGENDAR AGORA (HEADER) -->
+        <a href="https://wa.me/5532991118053?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20na%20Fabre%20Barbearia." 
+           target="_blank" 
+           class="btn-premium px-5 py-2 text-[10px] md:text-xs rounded-sm">
+           Agendar Agora
+        </a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-screen flex items-center justify-center text-center px-4 hero-bg">
+        <div class="max-w-4xl z-10">
+            <span class="text-silver tracking-[0.4em] text-xs uppercase mb-4 block">Juiz de Fora | Granbery</span>
+            <h1 class="text-5xl md:text-8xl mb-6 leading-tight">Precisão em cada corte.<br><span class="opacity-70 font-light italic text-4xl md:text-7xl">Estilo em cada presença.</span></h1>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center mt-10">
+                <!-- BOTÃO AGENDAR AGORA (HERO) -->
+                <a href="https://wa.me/5532991118053?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20na%20Fabre%20Barbearia." 
+                   target="_blank"
+                   class="btn-premium px-12 py-5 rounded-sm text-sm">
+                   Agendar meu Horário
+                </a>
+                <a href="#servicos" class="border border-silver/30 px-12 py-5 rounded-sm uppercase font-bold text-sm hover:bg-white hover:text-black transition">
+                   Ver Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servicos" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl mb-4">Experiência Fabre</h2>
+                <p class="text-silver max-w-xl">Muito além de uma barbearia. Um refúgio de sofisticação para o homem que preza pela excelência.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="service-card p-8">
+                    <h3 class="text-2xl mb-2">Corte Premium</h3>
+                    <p class="text-silver text-sm font-light mb-8">Técnica apurada e visagismo para um visual que comunica sua autoridade.</p>
+                    <span class="text-xl font-bold tracking-tighter">R$ 60,00</span>
+                </div>
+                <div class="service-card p-8 border-white/40">
+                    <div class="text-[10px] bg-white text-black px-2 py-0.5 inline-block mb-4 font-black">RECOMENDADO</div>
+                    <h3 class="text-2xl mb-2">Cabelo & Barba</h3>
+                    <p class="text-silver text-sm font-light mb-8">A combinação completa com toalha quente e finalização com produtos de elite.</p>
+                    <span class="text-xl font-bold tracking-tighter">R$ 100,00</span>
+                </div>
+                <div class="service-card p-8 bg-white text-black">
+                    <h3 class="text-2xl mb-2">Plano Assinatura</h3>
+                    <p class="text-zinc-600 text-sm font-light mb-8">Mantenha seu visual impecável o mês inteiro com visitas ilimitadas e benefícios exclusivos.</p>
+                    <span class="text-xl font-bold tracking-tighter uppercase text-sm">Consulte Valores</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL AGENDAR WHATSAPP -->
+    <section class="py-28 bg-graphite text-center px-6 relative overflow-hidden">
+        <div class="relative z-10">
+            <h2 class="text-4xl md:text-6xl mb-4 uppercase">Eleve o seu nível hoje</h2>
+            <p class="text-silver mb-10 text-lg font-light">Estamos localizados no coração do Granbery, prontos para te atender.</p>
+            
+            <!-- BOTÃO AGENDAR WHATSAPP (SEÇÃO FINAL) -->
+            <a href="https://wa.me/5532991118053?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20na%20Fabre%20Barbearia." 
+               target="_blank"
+               class="btn-premium px-16 py-6 rounded-sm text-base md:text-lg">
+               Agendar via WhatsApp
+            </a>
+            
+            <div class="mt-12 text-silver/40 text-[10px] tracking-[0.5em] uppercase">
+                R. Batista de Oliveira, 907 - Juiz de Fora
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 px-6 text-center border-t border-white/5">
+        <div class="text-xl font-bold tracking-[0.3em] mb-4">FABRE</div>
+        <p class="text-zinc-500 text-[10px] uppercase tracking-widest">© 2024 Fabre Barbearia | Granbery - JF. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
